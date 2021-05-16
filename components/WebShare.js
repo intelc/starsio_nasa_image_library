@@ -18,13 +18,16 @@ const WebShare = ({posttitle,sitetitle}) => {
     });
       
     console.log('webshare')
-
+  
+    const title =  `${posttitle} | ${sitetitle}`
+    const text =  `Check out ${posttitle} on ${sitetitle}`
+    console.log(title)
     const handleOnClick = () => {
         if (navigator.share) {
             navigator
               .share({
-                title: `${posttitle} | ${sitetitle}`,
-                text: `Check out ${posttitle} on ${sitetitle}`,
+                title: title,
+                text: text,
                 url: document.location.href,
               })
               .then(() => {
