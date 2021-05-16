@@ -1,0 +1,79 @@
+.top {
+  transition: all ease 1s;
+  height: 6vh;
+  width: 100%;
+  padding: 10px;
+  background: rgb(34, 34, 34);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.nav ul li a {
+  margin: 5px 15px;
+}
+
+.font{
+  transition: all ease 1s;
+  font-family: tenby-eight,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3vh;
+  letter-spacing: 3px;
+  position: absolute;
+  align-self: center;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+.font2{
+  transition: all ease 1s;
+  font-family: tenby-eight,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3vh;
+  letter-spacing: 3px;
+  position: absolute;
+  align-self: center;
+  left:5%;
+  top:50%;
+  transform: translate(0, -50%);
+}
+
+.searchin{
+  transition: all ease 1s;
+  position: absolute;
+  align-self: center;
+  opacity: 1;
+  left:90%;
+  top:50%;
+  transform: translate(-100%, -50%);
+  cursor: pointer;
+  height: 3vh;
+  width: 5vh;
+}
+.searchout{
+  transition: all ease 1s;
+  position: absolute;
+  align-self: center;
+  opacity: 0;
+  
+  left:50%;
+  top:50%;
+  transform: translate(-100%, -50%);
+  height: 1vh;
+  width: 1vh;
+}
+

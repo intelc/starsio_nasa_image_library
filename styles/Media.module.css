@@ -1,0 +1,16 @@
+.containernbs{
+padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content:center;
+  align-content:center;
+  max-width:800px;
+}
+
+.flexnbs{
+    display: flex;
+    flex-direction: column;
+    z-index:2;
+    justify-content:center;
+}

@@ -1,0 +1,23 @@
+.shareIcon {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    cursor: pointer;
+  
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: rgb(43, 135, 255);
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  .icon{
+    position: relative; 
+    left:45%;
+    top:40%;
+    height:25px;
+    width:25px;
+    transform: translate(-50%, -50%);
+  }
