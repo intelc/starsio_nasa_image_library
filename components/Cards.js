@@ -1,6 +1,11 @@
 import React from 'react'
 import CardIns from './CardIns'
 
+/*
+List of CardIns responsively arranged based on viewport size.
+
+Input param is a list of individual image details
+*/
 
 const Cards = ({content}) => {
     return (

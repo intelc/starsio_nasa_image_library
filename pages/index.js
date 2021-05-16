@@ -10,9 +10,13 @@ import popularPosts from '../assets/popularPosts'
 
 
 export default function Home() {
+
+  // Scroll page to focus on cards, button triggered
   const scroll=()=>{
     const element= document.getElementById('cards')
     const y = element.getBoundingClientRect().top + window.scrollY;
+      
+    //scroll behavior not supported on Safari Mobile
       window.scroll({
         top: y-80,
         behavior: 'smooth'
@@ -29,7 +33,7 @@ export default function Home() {
           <Header clickBtn={scroll}/>      
         </div>
         
-
+        
         <p className={styles.sectionText}>Popular Photos</p>
         <Cards content={popularPosts}/>
         <CallToSearch/>

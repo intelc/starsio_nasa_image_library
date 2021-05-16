@@ -4,8 +4,22 @@ import {useState,useCallback} from 'react'
 import {AiOutlineEnter} from 'react-icons/ai'
 import { useRouter } from 'next/router';
 
+/*
+
+Search bar which toggles between hidden and show by clicking icon
+
+CSS transition implemented for smooth transitions
+*/
+
+
 const Search = ({on,change}) => {
+
+    
+
+    //search bar user input state
     const [searchParam,setSearchParam]= useState('')
+
+    //triggers search on 'enter' key
     const onKeyDown = (event)=> {
         // 'keypress' event misbehaves on mobile so we track 'Enter' key via 'keydown' event
         if (event.key === 'Enter' && on) {
@@ -16,7 +30,9 @@ const Search = ({on,change}) => {
       }
    
 
-  
+    //submit function filters empty request 
+    //and redirects to search results
+    const router=useRouter()
     const onSubmit=(e)=>{
         if (e){
             e.preventDefault()
@@ -32,12 +48,14 @@ const Search = ({on,change}) => {
         router.push(`/searchResult/${searchParam}`)
         
     }
+    //focus search bar once activated by clicking search icon
     const callbackRef = useCallback(inputElement => {
         if (inputElement) {
           inputElement.focus();
         }
       }, []);
-    const router=useRouter()
+
+    
     return (
         <div className={styles.searchBarIn}>
           

@@ -1,6 +1,15 @@
 import React, { Component } from 'react'
 import Particles from "react-tsparticles"
 
+/* 
+
+Used TS Particles library for the home page particles effect.
+
+The interactive paricles animation keeps users interested and
+
+is fitting for the space theme (they look like stars!)
+
+*/
 
 export default class ParticleFrame extends Component {
   constructor(props) {
@@ -20,6 +29,8 @@ export default class ParticleFrame extends Component {
     console.log(container);
   }
   render() {
+    
+    //preset configuration
     return (
       <Particles
         id="tsparticles"
@@ -46,7 +57,7 @@ export default class ParticleFrame extends Component {
             },
             modes: {
               bubble: {
-                distance: 400,
+                distance: 200,
                 duration: 2,
                 opacity: 0.8,
                 size: 40,

@@ -4,15 +4,27 @@ import {useEffect, useState} from 'react'
 import {BiSearchAlt} from 'react-icons/bi'
 import { useRouter } from 'next/router'
 
+/*
+
+Nav bar is logo-only at the top of home pages,
+
+As user scroll down, the search icon shows and the layout shifts
+
+CSS transition implemented for extra coolness
+
+*/
 
 
 
 const Nav = ({onSearch}) => {
   const router = useRouter()
   let listener = null
-  const [scrollState, setScrollState] = useState("top")
-  const [searchState, setSearchState] = useState(false)
 
+  //location of the window: top | mid
+  const [scrollState, setScrollState] = useState("top")
+  
+  // hides search button at the top of home page
+  // transition to show when user scroll down or on other pages
   useEffect(() => {
     if(router.pathname === '/'){
       listener = document.addEventListener("scroll", e => {
@@ -32,7 +44,7 @@ const Nav = ({onSearch}) => {
       }
     }else{
       setScrollState('mid')
-      setSearchState(true)
+      
     }
   }, [scrollState])
 

@@ -3,8 +3,7 @@ import { useRouter } from 'next/router'
 import Cards from '../../components/Cards'
 import styles from '../../styles/Home.module.css'
 function searchResult ({data,input}) {
-    // const router = useRouter()
-    // const { id } = router.query
+    
 
     return (
         <div>
@@ -17,10 +16,14 @@ function searchResult ({data,input}) {
 }
 export async function getServerSideProps(context) {
     
+    //get query parameters
     const input = context.params.id
-        
+    
+    //init query result variable
     let ret
     try{
+
+        //fetch only images using the API endpoint
         const res = await fetch('https://images-api.nasa.gov/search?'+ new URLSearchParams({
                 q: input.toString(),
                 media_type: 'image',
@@ -33,8 +36,11 @@ export async function getServerSideProps(context) {
         console.log(e)
     }
     
+    //relevant info contained in the items list
     ret=ret.collection.items
 
+    //loop through the list to extract slug, title, and descrition
+    //some images don't have 'description', they have 'description_508' instead
     let data = []
     for(let i=0;i<ret.length;i=i+1){
         data.push({slug:ret[i].data[0].nasa_id,
@@ -44,7 +50,9 @@ export async function getServerSideProps(context) {
     }
   
     
-// Pass data to the page via props
+// Pass data to the page via props:
+//   data-> list of object(slug,title,description)
+//   input-> search parameter
 return { props: {data,input}} 
 }
 

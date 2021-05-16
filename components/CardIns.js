@@ -1,6 +1,10 @@
 import React from 'react'
 import {Card, Button} from 'react-bootstrap'
 import Link from 'next/link'
+
+/*
+ Card instances showing title, image, and description
+*/
 const CardIns = ({slug, img, name,description}) => {
   console.log('slug is' + slug)
     return (

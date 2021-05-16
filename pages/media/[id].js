@@ -22,28 +22,30 @@ const media = ({data,input}) => {
 
 export async function getServerSideProps(context) {
     
+    //get query parameters
     const input = context.params.id
-    console.log(input)
-        
-    
+       
+    //init query result variable
     let ret
     
     try{
+        //fetch image given slug
         const res = await fetch('https://images-api.nasa.gov/search?'+ new URLSearchParams({
-        nasa_id: input.toString()
-        
+        nasa_id: input.toString()     
         }),{mode: 'cors'})
-
-        
 
         ret =await res.json()
         
     }catch(e){
         console.log(e)
     }
-    let data = 0
-   
 
+    //init image info object
+    let data = 0
+
+    // given valid slug, return slug, title, description,
+    // and links(fetch json file)
+    //some images don't have 'description', they have 'description_508' instead
     if(ret.collection.items.length!==0){
         let links = (await fetch(ret.collection.items[0].href.toString()))
         links =await links.json()
@@ -59,8 +61,9 @@ export async function getServerSideProps(context) {
         
     }
   
-    
-// Pass data to the page via props
+// Pass data to the page via props:
+//   data-> list of object(slug,title,description,links)
+//   input-> search parameter
 return { props: {data, input}} 
 }
 

@@ -3,6 +3,11 @@ import TextLoop from "react-text-loop";
 import {BiSearchAlt} from 'react-icons/bi'
 import styles from '../styles/CallToSearch.module.css'
 
+/*
+Implemented TextLoop library to grab attention and prompt users 
+
+to try out a list of 'space words' in the home page.
+*/
 const CallToSearch = () => {
     return (
         <p className={styles.sectionText}>Try<span> </span> 
