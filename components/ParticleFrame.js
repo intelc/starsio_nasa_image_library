@@ -40,7 +40,7 @@ export default class ParticleFrame extends Component {
               },
               onHover: {
                 enable: true,
-                mode: "repulse",
+                mode: "grab",
               },
               resize: true,
             },

@@ -39,6 +39,7 @@ On mobile browsers, the image detail page will render a floating share icon.
 The button invokes Web Share API on mobile devices.
 
 <img src="/assets/msOnDemo.png" width="400"  />
+
 ## Video
 [Link](www.youtube.com)
 
