@@ -13,7 +13,10 @@ const CallToSearch = () => {
                       <span>apollo</span>
                       <span>galaxy</span>
                       <span>earth</span>
-                      <span>move</span>
+                      <span>telescope</span>
+                      <span>sky</span>
+                      <span>cat</span>
+                      <span>moon</span>
                       
           </TextLoop>{" "}
           </span>

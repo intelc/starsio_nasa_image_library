@@ -12,7 +12,7 @@ const indexList=[
     description:"AS16-113-18339 (21 April 1972) --- Astronaut John W. Young, commander of the Apollo 16 lunar landing mission, leaps from the lunar surface as he salutes the United States flag at the Descartes landing site during the first Apollo 16 extravehicular activity (EVA). Astronaut Charles M. Duke Jr., lunar module pilot, took this picture."
     },
     {slug:'PIA20912',
-    title:'Blazar Artist Conceptg',
+    title:'Blazar Artist Concept',
     description:"Black-hole-powered galaxies called blazars are the most common sources detected by NASA's Fermi Gamma-ray Space Telescope. As matter falls toward the supermassive black hole at the galaxy's center, some of it is accelerated outward at nearly the speed of light along jets pointed in opposite directions. "
     },
     

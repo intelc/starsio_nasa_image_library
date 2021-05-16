@@ -1,34 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# [STARS.IO](https://jolly-northcutt-55a303.netlify.app/)
 
-## Getting Started
+STARSIO is a Next.js app implementing image.nasa.gov API to support searching in the NASA Image Library.
+<img src="/indexDemo.png" width="400"  />
+## Installation
 
-First, run the development server:
+Build and serve local production content using Node.js
 
 ```bash
-npm run dev
-# or
-yarn dev
+npm run build
+npm run start
 ```
+Alternatively, [live demo](https://jolly-northcutt-55a303.netlify.app/) is avaliable.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Search
+Click the search bar at anywhere on the website
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+<img src="/searchDemo.png" width="400"  />
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Click the 'enter' icon or enter key to search NASA Image Library content
 
-## Learn More
+<img src="/SearchResultDemo.png" width="400"  />
+### View Image Details
+Click on the **Learn More** button in any of the cards. A detail page with title, image, and description is shown. 
 
-To learn more about Next.js, take a look at the following resources:
+<img src="/detailDemo.png" width="400"  />
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This link is dynamicly created based on the image 'slug' (nasa_id).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Web Share on Mobile
 
-## Deploy on Vercel
+On mobile browsers, the image detail page will render a floating share icon.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<img src="/msDemo.png" width="400"  />
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The button invokes Web Share API on mobile devices.
+
+<img src="/msOnDemo.png" width="400"  />
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

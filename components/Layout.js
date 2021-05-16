@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Meta />
-
+      
       <Nav onSearch={(toggleSearch)}/>
       
       
