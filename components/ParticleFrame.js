@@ -29,7 +29,7 @@ export default class ParticleFrame extends Component {
     console.log(container);
   }
   render() {
-    
+
     //preset configuration
     return (
       <Particles
@@ -38,9 +38,9 @@ export default class ParticleFrame extends Component {
         loaded={this.particlesLoaded}
         width='100%'
         height='100vh'
-        style={{ zIndex: '1', height:'100vh'}}
+        style={{ zIndex: '1', height: '100vh' }}
         options={{
-          
+
           fpsLimit: 60,
           interactivity: {
             detectsOn: "canvas",

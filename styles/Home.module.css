@@ -9,28 +9,28 @@
 }
 
 
-.topContainer{
+.topContainer {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  width:100%; 
+  width: 100%;
   max-width: 100%;
   height: 100vh;
   z-index: 1;
 }
 
 
-.galaxyBG{
-  position:absolute;
-  top:50%;
-  left:50%;
+.galaxyBG {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  width:100%;
-  height:100%;
-  object-Fit:cover;
-  z-Index:-1;
+  width: 100%;
+  height: 100%;
+  object-Fit: cover;
+  z-Index: -1;
 }
 
 
@@ -46,19 +46,19 @@
 }
 
 
-.sectionText{
-  text-align:center;
-  margin-top:3rem;
-  margin-bottom:3rem;
-  font-size:1.5rem;
+.sectionText {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
 }
 
-.bottomContainer{
+.bottomContainer {
   margin-right: auto;
   margin-left: auto;
-  align-content:center;
-  position:relative;
+  align-content: center;
+  position: relative;
   font-size: 2rem;
-  left:48%;
-  
+  left: 48%;
+
 }

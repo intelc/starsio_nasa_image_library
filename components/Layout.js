@@ -4,29 +4,29 @@ import Header from './Header'
 import Search from './Search'
 import styles from '../styles/Layout.module.css'
 
-import {useEffect, useState} from 'react'
+import { useEffect, useState } from 'react'
 
 
 const Layout = ({ children }) => {
 
   //state tracking the showing of the search bar
-  const [searchBar, setSearchBar]=useState(false)
+  const [searchBar, setSearchBar] = useState(false)
 
   //function for child components to change search bar status
-  const toggleSearch = ()=>{
+  const toggleSearch = () => {
     setSearchBar(!searchBar)
-    
+
   }
   return (
     <>
       <Meta />
-      
-      <Nav onSearch={(toggleSearch)}/>
-      
-      
+
+      <Nav onSearch={(toggleSearch)} />
+
+
       <div className={styles.container}>
-        <Search on={searchBar} change={toggleSearch}/>
-        <main className={styles.main}>   
+        <Search on={searchBar} change={toggleSearch} />
+        <main className={styles.main}>
           {children}
         </main>
         <script> </script>

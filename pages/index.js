@@ -12,36 +12,36 @@ import popularPosts from '../assets/popularPosts'
 export default function Home() {
 
   // Scroll page to focus on cards, button triggered
-  const scroll=()=>{
-    const element= document.getElementById('cards')
+  const scroll = () => {
+    const element = document.getElementById('cards')
     const y = element.getBoundingClientRect().top + window.scrollY;
-      
+
     //scroll behavior not supported on Safari Mobile
-      window.scroll({
-        top: y-80,
-        behavior: 'smooth'
-      });
+    window.scroll({
+      top: y - 80,
+      behavior: 'smooth'
+    });
   }
-  
+
   return (
     <div>
-        <div className={styles.topContainer} >
-          <div className={styles.galaxyContainer}>
-          <img src='/PIA15416_large.jpeg' alt='' className={styles.galaxyBG}/>
-          </div>
-          <Particle/>
-          <Header clickBtn={scroll}/>      
+      <div className={styles.topContainer} >
+        <div className={styles.galaxyContainer}>
+          <img src='/PIA15416_large.jpeg' alt='' className={styles.galaxyBG} />
         </div>
-        
-        
-        <p className={styles.sectionText}>Popular Photos</p>
-        <Cards content={popularPosts}/>
-        <CallToSearch/>
-          
-       
+        <Particle />
+        <Header clickBtn={scroll} />
+      </div>
+
+
+      <p className={styles.sectionText}>Popular Photos</p>
+      <Cards content={popularPosts} />
+      <CallToSearch />
+
+
       <footer className={styles.footer}>
         <p>Yiheng Chen 2021</p>
       </footer>
-   </div>
+    </div>
   )
 }

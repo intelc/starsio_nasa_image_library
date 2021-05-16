@@ -25,55 +25,56 @@
   margin: 5px 15px;
 }
 
-.font{
+.font {
   transition: all ease 1s;
-  font-family: tenby-eight,sans-serif;
+  font-family: tenby-eight, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 3vh;
   letter-spacing: 3px;
   position: absolute;
   align-self: center;
-  left:50%;
-  top:50%;
+  left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
 }
-.font2{
+
+.font2 {
   transition: all ease 1s;
-  font-family: tenby-eight,sans-serif;
+  font-family: tenby-eight, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 3vh;
   letter-spacing: 3px;
   position: absolute;
   align-self: center;
-  left:5%;
-  top:50%;
+  left: 5%;
+  top: 50%;
   transform: translate(0, -50%);
 }
 
-.searchin{
+.searchin {
   transition: all ease 1s;
   position: absolute;
   align-self: center;
   opacity: 1;
-  left:90%;
-  top:50%;
+  left: 90%;
+  top: 50%;
   transform: translate(-100%, -50%);
   cursor: pointer;
   height: 3vh;
   width: 5vh;
 }
-.searchout{
+
+.searchout {
   transition: all ease 1s;
   position: absolute;
   align-self: center;
   opacity: 0;
-  
-  left:50%;
-  top:50%;
+
+  left: 50%;
+  top: 50%;
   transform: translate(-100%, -50%);
   height: 1vh;
   width: 1vh;
 }
-

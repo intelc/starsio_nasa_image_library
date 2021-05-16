@@ -10,7 +10,7 @@ const Meta = ({ title, keywords, description }) => {
       <link rel='icon' href='/favicon.ico' />
       <link rel="stylesheet" href="https://use.typekit.net/zoe8bro.css"></link>
       <title>{title}</title>
-      
+
     </Head>
   )
 }
