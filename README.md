@@ -6,6 +6,7 @@ explore and share the NASA library.
 
 
 <img src="/assets/indexDemo.png" width="400"  />
+
 ## Installation
 
 Build and serve local production content using Node.js
@@ -26,6 +27,7 @@ Click the search bar at anywhere on the website
 Click the 'enter' icon or enter key to search NASA Image Library content
 
 <img src="/assets/SearchResultDemo.png" width="400"  />
+
 ### View Image Details
 Click on the **Learn More** button in any of the cards. A detail page with title, image, and description is shown. 
 
@@ -47,6 +49,7 @@ The button invokes Web Share API on mobile devices.
 Both search and image detail page uses dynamic routing and fetches data at run time. While this may result in more calls
 than a cached/redux state solution, we guarantee that users can share search result and individual images which is the desired behavior.
 Next.js's SSR capability ensures the dynamicly generated content are recognizable by search engines.
+
 ## Video
 [Link](https://youtu.be/6j9EdQaig0w)
 
