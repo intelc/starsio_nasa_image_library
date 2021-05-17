@@ -1,6 +1,9 @@
 # [STARS.IO](https://jolly-northcutt-55a303.netlify.app/)
 
-STARSIO is a Next.js app implementing image.nasa.gov API to support searching in the NASA Image Library.
+STARSIO is an Next.js app implementing image.nasa.gov API to support searching in the NASA Image Library.
+The goal of this project is to create a user-oriented, aesthetic, and mobile-first website for users to 
+explore and share the NASA library.
+
 
 <img src="/assets/indexDemo.png" width="400"  />
 ## Installation
@@ -40,8 +43,12 @@ The button invokes Web Share API on mobile devices.
 
 <img src="/assets/msOnDemo.png" width="400"  />
 
+### Dynamic Routing
+Both search and image detail page uses dynamic routing and fetches data at run time. While this may result in more calls
+than a cached/redux state solution, we guarantee that users can share search result and individual images which is the desired behavior.
+Next.js's SSR capability ensures the dynamicly generated content are recognizable by search engines.
 ## Video
-[Link](www.youtube.com)
+[Link](https://youtu.be/6j9EdQaig0w)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
